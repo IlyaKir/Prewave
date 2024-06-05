@@ -7,6 +7,7 @@
 ## How to run (locally):
 1. Export key for Prewave api (unix terminal): `export PRIVATE_KEY=ilia...`
 2. Run sbt (from root folder of project): `sbt run`
+*. Run tests:`sbt test`
 
 ## API
 1. Visit http://localhost:8000/graphql
@@ -63,7 +64,14 @@ On the left side we write query and on the right side we get response:
 Take a look at `DOCS` on the right side for details about query. Please pay attention that `allTerms` and `allAlerts` fields return all data which prewave api responses (this info is also in `DOCS` description).
 <img width="1312" alt="docs" src="https://github.com/IlyaKir/Prewave/assets/20299301/9f13af68-0ef4-4da0-bc29-c2a323f564da">
 
+## Notes
+1. I assume that the queryTerm API call returns different terms (with unique ids). Same for alerts API call.
+2. If the term has `keepOrder=true` then I assume that words can only be separated by spaces (not punctuation marks)
+3. Since we have multiple terms with same text but with different `language` field, I assume that we should match terms and alert's contents with the same language.
+
+
 ## Ideas for imrovements:
 1. If we have stream of alerts and want to react to them, then Akka Streams fits better
 2. With current algorithm it's possible to find matches in parallel, but it will only work faster if we have large set of data (alerts). If we don't have so much data, it will cost more to create threads.
-3. For testing API it's possible to generate code from GraphQL Schema and use it to create queries to api in Scala. 
+3. For testing API it's possible to generate code from GraphQL Schema and use it to create queries to api in Scala.
+5. Prewave API response fields `language` and `inputType` can be parsed into enum types.
