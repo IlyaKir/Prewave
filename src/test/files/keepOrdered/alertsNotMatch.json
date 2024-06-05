@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "contents": [
+      {
+        "text": "Hello world",
+        "type": "text",
+        "language": "de"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  },
+  {
+    "id": "2",
+    "contents": [
+      {
+        "text": "Hello, world",
+        "type": "text",
+        "language": "en"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  },
+  {
+    "id": "3",
+    "contents": [
+      {
+        "text": "world Hello",
+        "type": "text",
+        "language": "en"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  },
+  {
+    "id": "4",
+    "contents": [
+      {
+        "text": "Hello the world",
+        "type": "text",
+        "language": "en"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  },
+  {
+    "id": "5",
+    "contents": [
+      {
+        "text": "Hello",
+        "type": "text",
+        "language": "en"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  },
+  {
+    "id": "6",
+    "contents": [
+      {
+        "text": "Hello worlds",
+        "type": "text",
+        "language": "en"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  },
+  {
+    "id": "7",
+    "contents": [
+      {
+        "text": "",
+        "type": "text",
+        "language": "en"
+      }
+    ],
+    "date": "2024-06-03T13:35:19.831Z",
+    "inputType": "link"
+  }
+]
