@@ -7,7 +7,8 @@
 ## How to run (locally):
 1. Export key for Prewave api (unix terminal): `export PRIVATE_KEY=ilia...`
 2. Run sbt (from root folder of project): `sbt run`
-*. Run tests:`sbt test`
+
+(Optional) Run tests: `sbt test`
 
 ## API
 1. Visit http://localhost:8000/graphql
