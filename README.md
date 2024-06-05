@@ -1,11 +1,16 @@
 # Prewave
-## How to run:
-1. Add key for prewave api in .env file: `PRIVATE_KEY=ilia.....`
-2. Build docker image: `docker build -t ilia_prewave .`
+## How to run (docker):
+1. Add key for Prewave api in .env file: `PRIVATE_KEY=ilia.....`
+2. Build docker image (from root folder of project): `docker build -t ilia_prewave .`
 3. Run docker container `docker run --name api --env-file .env -p 8000:8000 -d ilia_prewave`
 4. Use `docker logs api -f` to get logs
-5. Visit http://localhost:8000/graphql
-6. Send json query via graphql api
+## How to run (locally):
+1. Export key for Prewave api (unix terminal): `export PRIVATE_KEY=ilia...`
+2. Run sbt (from root folder of project): `sbt run`
+
+## API
+1. Visit http://localhost:8000/graphql
+2. Send json query via graphql api
 ```
 query getTexts{
   getAlertMatches {
